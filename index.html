@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--suppress HtmlRequiredAltAttribute -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style/zero.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/base.css">
+</head>
+<body>
+    <div class="noise_background">
+        <div class="header slide overlay">
+            <h1>ФИО</h1>
+            <h2></h2>
+
+            <div class="goto-bottom">
+                <a href="#about"><img src="svg/down-arrow.svg" width="100" alt="down arrow">
+                </a>
+            </div>
+        </div>
+        <div class="slide" id="about">
+            <div class="icon-container"><img src="icon.png" alt=""></div>
+            <div class="text">
+                <h2>О себе:</h2>
+                Активно пишу на Java, изучал структуру и генерацию Java Bytecode. Tак же писал на таких языках как:
+                <ul>
+                    <li>Kotlin</li>
+                    <li>Groovy</li>
+                    <li>Python</li>
+                    <li>Rust</li>
+                    <li>Lua</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <h2>Проекты: </h2>
+                <ul>
+                    <li><a class="project-ref" href="#bio">Сайт-Тренажёр по биологии на тему "Синтез белка"</a></li>
+                    <li><a class="project-ref" href="#graph">Сайт для создание блок-схем в соответвии с ГОСТ</a></li>
+                    <li><a class="project-ref" href="#JavaAsmLib">JavaAsmLib - расширение для библиотеки asm(для
+                        манипуляции Java ByteCode)</a></li>
+                    <li><a class="project-ref" href="#SimpleFunctions">SimpleFunctions - язык выражений, с возможностью
+                        компиляции в Java в Runtime</a></li>
+                    <li><a class="project-ref" href="#LauxLang">LauxLang - низкоуровневый стековый язык</a></li>
+                    <li><a class="project-ref" href="#ArcLibrary">Расширающая библиотека для фреймворка Arc</a></li>
+                    <li><a class="project-ref" href="#Intellij">Плагины для Intellij Idea:</a>
+                        <ul>
+                            <li><a class="project-ref" href="#ArcPlugin">ArcPlugin</a></li>
+                            <li><a class="project-ref" href="#HJson">HJson</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide project_slide" id="bio">
+            <a class="goto-top arrow-up" href="#about"> </a>
+            <h1>Сайт-Тренажёр по биологии на тему "Синтез белка"</h1>
+            <div class="text">
+                <div class="columns">
+                    <div class="images">
+                        <img style="max-height: 40%; max-width: 80%" src="images/bio1.png">
+                        <img style="max-height: 40%;max-width: 80%" src="images/bio2.png">
+                    </div>
+                    <div style="display: flex;flex-direction: column">
+                        <div>
+                            <p>Тренажёр используется для отработки этампов синтеза белка.</p>
+                            <p>Данный сайт используется для подготовки учеников к экзаменам по биологии. А так же для
+                                отработки нового материала</p>
+                        </div>
+                        <div class="center" style="flex: 1">
+                            <a style="align-self: center;" href="https://kena78.github.io/ProteinSynthesis/"><img
+                                    class="qr-code" src="qr/bio.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goto-bottom"><a class="arrow-down" href="#graph"></a></div>
+        </div>
+    <div class="slide project_slide" id="graph">
+        <a class="goto-top arrow-up" href="#about"> </a>
+        <h1>Сайт для создание блок-схем в соответвии с ГОСТ</h1>
+        <div class="text">
+            <div class="columns">
+                <div class="images">
+                    <img style="max-height: 40%; max-width: 80%" src="images/graph1.png">
+                    <img style="max-height: 40%;max-width: 80%" src="images/graph2.png">
+                </div>
+                <div style="display: flex;flex-direction: column">
+                    <div>
+                        <p>На данном сайте релизована генерация блок-схем.</p>
+                        <p>Блок-схемы описываются с помощью псевдо языка</p>
+                        <p>Имеется:</p>
+                        <ul>
+                            <li>Подсветка синтаксиса</li>
+                            <li>Автодополненение закрывающих элементов(скобки и кавычки)</li>
+                            <li>Ветвления в боковые стороны</li>
+                        </ul>
+                    </div>
+                    <div class="center" style="flex: 1">
+                        <a style="align-self: center;" href="https://zelaux.github.io/Block-Diagram/"><img
+                                class="qr-code" src="qr/graph.png" alt="qr-code missing"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goto-bottom"><a class="arrow-down" href="#JavaAsmLib"></a></div>
+    </div>
+    <div class="slide project_slide" id="JavaAsmLib">
+        <a class="goto-top arrow-up" href="#about"> </a>
+        <h1>JavaAsmLib</h1>
+        <div class="text">
+
+        </div>
+        <div class="goto-bottom"><a class="arrow-down" href="#SimpleFunctions"> </a></div>
+    </div>
+    <div class="slide project_slide" id="SimpleFunctions">
+        <a class="goto-top arrow-up" href="#about"> </a>
+        <h1>SimpleFunctions</h1>
+        <div class="text">
+
+        </div>
+        <div class="goto-bottom"><a class="arrow-down" href="#LauxLang"></a></div>
+    </div>
+    <div class="slide project_slide" id="LauxLang">
+        <a class="goto-top arrow-up" href="#about"> </a>
+        <h1>LauxLang</h1>
+        <div class="text">
+
+        </div>
+        <div class="goto-bottom"><a class="arrow-down" href="#ArcLibrary"></a></div>
+    </div>
+    <div class="slide project_slide" id="ArcLibrary">
+        <a class="goto-top arrow-up" href="#about"> </a>
+        <h1>ArcLibrary</h1>
+        <div class="text">
+            <div class="columns">
+                <div class="images">
+                    <img style="max-height: 40%; max-width: 80%" src="images/graph1.png">
+                    <img style="max-height: 40%;max-width: 80%" src="images/graph2.png">
+                </div>
+                <div style="display: flex;flex-direction: column">
+                    <div>
+                        <p>Данная библиотека на Java предостовляет более 10 модулей, расширяющих Arc.</p>
+                        <p>Для каждого модуля реализовано описание того что оно добавляет в формате markdown на
+                            гитхабе</p>
+                    </div>
+                    <div class="center" style="flex: 1">
+                        <a style="align-self: center;" href="https://github.com/Zelaux/ArcLibrary"><img
+                                class="qr-code" src="qr/arclib.png" alt="qr-code missing"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goto-bottom"><a class="arrow-down" href="#Intellij"></a></div>
+    </div>
+    <div class="slide project_slide" id="Intellij">
+        <a class="goto-top arrow-up" href="#about"> </a>
+        <h1>Intellij Idea</h1>
+
+        <div class="text">
+            <p>
+                Intellij Idea — Среда для разработки на Java. На её основе так же сущестуют среды разработки для
+                других языков(PhpStorm, PyCharm, GoLang и тд)
+            </p>
+            <div class="flex-column">
+                <div style="margin-top: 2em" class="columns">
+                    <div>
+                        <h1 style="text-align: center" class="arclib-icon">
+                            ArcPlugin
+                        </h1>
+
+                        <p>Этот плагин добавляет поддержку фреймворка Arc в Intellij Idea</p>
+                        <ul>
+                            <li>Специально отображение некоторые классов в debug режиме</li>
+                            <li>Отображение цветовых преобразований на боковой понели</li>
+                            <li>Инспекции предупреждающие о Runtime ошибка</li>
+                            <li>Автодополнение из .properties файлов, в соответсвии с конвенциями Arc</li>
+                            <li>Шаблоны кода для колекций из Arc</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 style="text-align: center" class="hjson-icon">HJson</h1>
+                        <p>
+                            Для языка hjson добавляет подсветку синтаксиса, автоформатирование, и остальные элементы
+                            поддержки языка в среду разработки IntellijIdea.
+                        </p>
+                    </div>
+                </div>
+                <div style="flex: 1" class="columns">
+
+                    <div class="center" style="flex: 1">
+                        <a style="align-self: center;" href="https://github.com/Zelaux/ArcSupportPlugin"><img
+                                class="qr-code" src="qr/arclib-plugin.png" alt="qr-code missing"></a>
+                    </div>
+
+                    <div class="center" style="flex: 1">
+                        <a style="align-self: center;" href="https://github.com/Zelaux/HjsonSupportPlugin"><img
+                                class="qr-code" src="qr/hjson.png" alt="qr-code missing"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goto-bottom"><a class="arrow-down" href="#about"></a></div>
+    </div>
+    </div>
+</body>
+</html>

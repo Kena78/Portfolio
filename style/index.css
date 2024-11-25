@@ -1,0 +1,202 @@
+:root {
+    font-size: 20px;
+}
+
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.noise_background {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.noise_background::before, .noise_background::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.noise_background::before {
+    background-color: #642b8a;
+}
+
+.noise_background::after {
+    background-image: url('../SuperPerlin_01-512x512.png');
+    background-repeat: repeat;
+    opacity: 0.1;
+}
+
+.slide {
+    min-height: 100vh;
+}
+
+*:has(.goto-bottom), *:has(.goto-top) {
+    position: relative;
+}
+
+.goto-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.goto-bottom > a {
+    margin: auto;
+}
+
+.goto-top {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: block;
+    width: 100%;
+    justify-content: center;
+}
+
+.arrow-up {
+    --arrow-size: 64px;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    background-image: url("../svg/up-arrow.svg");
+    background-size: cover;
+}
+
+.arrow-down {
+    --arrow-size: 64px;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    background-image: url("../svg/down-arrow.svg");
+    background-size: cover;
+}
+
+#about {
+    display: flex;
+}
+
+#about > * {
+    flex: 2;
+}
+
+.icon-container > img {
+    width: 75%;
+    border-radius: 50%;
+}
+
+#about > .icon-container {
+    flex: 1;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.text {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: black;
+    background: white;
+}
+
+.text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
+    color: black;
+    text-align: left;
+}
+
+
+.project-ref, .project-ref:visited {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.project_slide {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    line-height: 2;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.images > * {
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.images > *:first-child {
+    margin-top: auto;
+}
+
+.images > *:last-child {
+    margin-bottom: auto;
+}
+
+.qr-code {
+    width: 256px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.rows > * {
+    flex: 1;
+}
+
+.arclib-icon::after {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+
+    background: url("https://raw.githubusercontent.com/Zelaux/ArcSupportPlugin/refs/heads/master/src/main/resources/META-INF/pluginIcon.svg");
+    background-size: cover;
+}
+
+.hjson-icon::after {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+
+    background: url("https://raw.githubusercontent.com/Zelaux/HjsonSupportPlugin/refs/heads/master/src/main/resources/META-INF/pluginIcon.svg");
+    background-size: cover;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
